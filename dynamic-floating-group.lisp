@@ -342,7 +342,8 @@ the parameter MASTER-RATIO and CURRENT-LAYOUT."
 
       (setf sw (- sw (* 2 stumpwm::*float-window-border*)))
       (setf sh (- sh (* 2 stumpwm::*float-window-border*)
-                  (head-mode-line-height)))
+                  (head-mode-line-height)
+                  stumpwm::*float-window-title-height*))
 
       (case N
         (0 nil)
